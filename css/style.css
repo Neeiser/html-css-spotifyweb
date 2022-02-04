@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* DEBUGGING */
+
+body{
+    background-color: #4d4d4d;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    background-color: #59b4ff;
+    height: 90%;
+    width: 20%;
+}
+
+main{
+    background-color: #ff8e59;
+    height: 90%;
+    width: 80%;
+}
+
+footer {
+    background-color: #73a059;
+    height: 10%;
+    width: 100%;
+}

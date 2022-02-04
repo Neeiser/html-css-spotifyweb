@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* Dichiarazione variabili */
+
+html {
+    --white-font: #ffffff;
+    --dark-white-font: #444444;
+    --dark-white-player: #c1c1c1;
+    --black-side: #000000;
+    --blue-main: #141922;
+    --trasparent-banner: ;
+    --grey-player: #282828;
+}
+
 /* START DEBUGGING */
 
 body{

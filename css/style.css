@@ -32,7 +32,7 @@ html {
     --blue-main: #141922;
     --trasparent-banner: ;
     --grey-player: #282828;
-    --grey-add: #a3a3a3;
+    --grey-icon: #a3a3a3;
 }
 
 
@@ -44,6 +44,7 @@ aside{
     height: 90%;
     width: 200px;
     padding-left: 15px;
+    position: relative; /* Mi serve per posizionare il div .profile */
 }
 
 header{
@@ -60,12 +61,11 @@ aside a{
 }
 
 ul{
-    border: 1px solid red;
     padding: 5px 0;
 }
 
 aside .fas{
-    color: var(--dark-white-font);
+    color: var(--grey-icon);
 }
 
 /* ASIDE Specific selectors */
@@ -100,7 +100,6 @@ aside .fas{
 }
 
 .ul-middle .fa-plus-square{
-    color: var(--grey-add);
     font-size: 2rem;
     width: 40px; /* Come alternativa avrei potuto usare il padding-right */
 }
@@ -108,6 +107,40 @@ aside .fas{
 #add-playlist a{
     display: flex;
     align-items: center;
+}
+
+/* ---------------------------- */
+
+.profile {
+    position: absolute;
+    bottom: 0;
+    padding-right: 15px;
+}
+
+.profile hr{
+    width: 170px;
+    border: 1px solid var(--dark-white-font);
+}
+
+.profile span{
+    display: block;
+    color: var(--dark-white-font);
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+
+.profile span:last-child{
+    display: flex;
+    align-items: center;
+    color: var(--white-font);
+}
+
+.profile .fas,.far{
+    padding-right: 10px;
+}
+
+.fa-user-circle{
+    font-size: 1.5rem;
 }
 
 /* MAIN SECTION */

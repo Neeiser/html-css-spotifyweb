@@ -32,6 +32,7 @@ html {
     --blue-main: #141922;
     --trasparent-banner: ;
     --grey-player: #282828;
+    --grey-add: #a3a3a3;
 }
 
 
@@ -60,6 +61,7 @@ aside a{
 
 ul{
     border: 1px solid red;
+    padding: 5px 0;
 }
 
 aside .fas{
@@ -68,15 +70,45 @@ aside .fas{
 
 /* ASIDE Specific selectors */
 
-.ul-top{
-    
+.ul-top li{
+    padding: 6px 0;
+}
+
+.ul-top i{
+    width: 20px;
+}
+
+.ul-top a{
+    padding-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .ul-middle li {      /* Per "Playlist" */
     color: var(--white-font);
 }
 
+/* ---------------------------- */
 
+.ul-middle li{
+    padding: 6px 0;
+}
+
+.ul-middle li{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.ul-middle .fa-plus-square{
+    color: var(--grey-add);
+    font-size: 2rem;
+    width: 40px; /* Come alternativa avrei potuto usare il padding-right */
+}
+
+#add-playlist a{
+    display: flex;
+    align-items: center;
+}
 
 /* MAIN SECTION */
 

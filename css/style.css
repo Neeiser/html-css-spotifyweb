@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
@@ -23,31 +30,50 @@ html {
     --grey-player: #282828;
 }
 
-/* START DEBUGGING */
 
-body{
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
 
+/* ASIDE SECTION */
+/* ASIDE Generic selectors */
 aside{
     background-color: var(--black-side);
     height: 90%;
     width: 200px;
 }
 
-ul{
-    border: 1px solid red;
+header{
+    display: flex;
+    height: 70px;
 }
 
-aside li {      /* Per "Playlist" */
-    color: var(--white-font);
+header img{
+    width: 120px;
 }
 
 aside a{
     color: var(--dark-white-font);
 }
+
+ul{
+    border: 1px solid red;
+}
+
+aside .fas{
+    color: var(--dark-white-font);
+}
+
+/* ASIDE Specific selectors */
+
+.ul-top{
+    
+}
+
+.ul-middle li {      /* Per "Playlist" */
+    color: var(--white-font);
+}
+
+
+
+/* MAIN SECTION */
 
 main{
     background-color: #141922;
@@ -71,10 +97,12 @@ main .banner{
     background-color: #00000070;
 }
 
+
+
+/* FOOTER SECTION */
+
 footer {
     background-color: #282828;
     height: 10%;
     width: 100%;
 }
-
-/* END DEBUGGING */

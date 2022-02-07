@@ -29,6 +29,7 @@ html {
     --white: #ffffff;
     --white-darker: #c1c1c1;
     --grey: #7b7d82;
+    --grey-darker: #282828;
     --black-side: #000000;
     --blue-main: #141922;
     --trasparent-banner: #00000088;
@@ -153,7 +154,7 @@ main > div{
 }
 
 main h2{
-    margin: 2% 0 2% 10px;
+    margin: 20px 0 10px 10px;
 }
 
 main h2,h3 {
@@ -271,7 +272,28 @@ main span{
 /* FOOTER SECTION */
 
 footer {
-    background-color: #282828;
-    height: 10%;
+    background-color: var(--grey-darker);
+    height: 70px;
     width: 100%;
+}
+
+/* .foot-left section */
+
+.foot-left{
+    display: flex;
+    align-items: center;
+}
+
+.foot-left h4{
+    color: var(--white);
+    font-size: 0.8em;
+}
+
+.foot-left span{
+    color: var(--grey);
+    font-size: 0.6em;
+}
+
+.foot-left img{
+    width: 50px;
 }

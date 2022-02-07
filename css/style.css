@@ -333,14 +333,39 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.foot-middle-time{
+.foot-middle-icons{
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 80%;
 }
 
+.foot-middle-icons i{
+    color: var(--white);
+    font-size: 1.2em;
+    margin: 0 4%;
+}
+
+.foot-middle-icons .fa-play-circle{
+    font-size: 2em;
+}
+
+.foot-middle-time{
+    display: flex;
+    align-items: baseline;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.foot-middle-time span{
+    font-size: 0.7em;
+    color: var(--white);
+}
+
+/* La barra della traccia */
 #player-track{
     width: 100%;
     height: 0.4em;

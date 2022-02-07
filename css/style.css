@@ -169,6 +169,15 @@ main button{
     border-radius: 30px;
 }
 
+main button:hover {
+    filter:contrast(0.5);
+    cursor: pointer;
+}
+
+main button:active {
+    filter:contrast(0.2);
+}
+
 /* MAIN:  .category SECTION */
 
 main .category{
@@ -191,17 +200,43 @@ main .category a{
 
 .recently-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .recently-container div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 6);
+    width: 200px;
+    text-align: center;
 }
 
-.recently img{
-    width: 150px;
+.recently h2{
+    margin: 2% 0 2% 25px;
+}
+
+.recently h2,h3 {
+    color: var(--white-font);
+}
+
+.recently-container div *{
+    padding: 5px 0;
+}
+
+.recently-container span {
+    color: var(--grey);
+}
+
+.recently-container h3 {
+    font-size: 1rem;
+}
+
+.recently-container span{
+    font-size: 0.8rem;
+}
+
+.recently-container img{
+    max-width: 90%;
 }
 
 

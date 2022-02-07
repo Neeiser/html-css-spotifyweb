@@ -30,7 +30,7 @@ html {
     --dark-white-player: #c1c1c1;
     --black-side: #000000;
     --blue-main: #141922;
-    --trasparent-banner: ;
+    --trasparent-banner: #00000088;
     --grey-player: #282828;
     --grey-icon: #a3a3a3;
 }
@@ -162,9 +162,20 @@ main div{
 }
 
 main .banner{
-    height: 100px;
+    height: 70px;
     width: 100%;
-    background-color: #00000070;
+    background-color: var(--trasparent-banner);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner button{
+    color: var(--white-font);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1.5px solid var(--white-font);
+    border-radius: 30px;
 }
 
 

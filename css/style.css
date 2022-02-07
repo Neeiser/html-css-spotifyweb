@@ -26,9 +26,9 @@ li{
 /* Dichiarazione variabili */
 
 html {
-    --white-font: #ffffff;
+    --white: #ffffff;
+    --white-darker: #c1c1c1;
     --grey: #7b7d82;
-    --dark-white-player: #c1c1c1;
     --black-side: #000000;
     --blue-main: #141922;
     --trasparent-banner: #00000088;
@@ -60,7 +60,7 @@ ul{
 }
 
 aside .fas{
-    color: var(--dark-white-player);
+    color: var(--white-darker);
 }
 
 /* ASIDE Specific selectors */
@@ -80,7 +80,7 @@ aside .fas{
 }
 
 .ul-middle li {      /* Per "Playlist" */
-    color: var(--white-font);
+    color: var(--white);
 }
 
 /* ---------------------------- */
@@ -127,7 +127,7 @@ aside .fas{
 .profile span:last-child a{
     display: flex;
     align-items: center;
-    color: var(--white-font);
+    color: var(--white);
 }
 
 .profile .fas,.far{
@@ -144,11 +144,22 @@ main{
     background-color: #141922;
     height: 90%;
     width: calc(100% - 200px);
+    overflow-y: auto;
 }
 
 main div{
     border: 1px solid red;  
 }
+
+main h2{
+    margin: 2% 0 2% 10px;
+}
+
+main h2,h3 {
+    color: var(--white);
+}
+
+/* MAIN:  .banner SECTION */
 
 main .banner{
     height: 70px;
@@ -159,22 +170,22 @@ main .banner{
     align-items: center;
 }
 
-main button{
-    color: var(--white-font);
+.banner button{
+    color: var(--white);
     background-color: transparent;
     font-size: 0.7rem;
     margin-right: 10px;
     padding: 12px 30px;
-    border: 1.5px solid var(--white-font);
+    border: 1.5px solid var(--white);
     border-radius: 30px;
 }
 
-main button:hover {
+.banner button:hover {
     filter:contrast(0.5);
     cursor: pointer;
 }
 
-main button:active {
+.banner button:active {
     filter:contrast(0.2);
 }
 
@@ -198,12 +209,12 @@ main .category a{
 
 /* MAIN:  .recently SECTION */
 
-.recently-container{
+.raw{
     display: flex;
     flex-wrap: wrap;
 }
 
-.recently-container div{
+.raw div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,34 +222,45 @@ main .category a{
     text-align: center;
 }
 
-.recently h2{
-    margin: 2% 0 2% 25px;
-}
-
-.recently h2,h3 {
-    color: var(--white-font);
-}
-
-.recently-container div *{
+.raw div *{
     padding: 5px 0;
 }
 
-.recently-container span {
+.raw span {
     color: var(--grey);
 }
 
-.recently-container h3 {
+.raw h3 {
     font-size: 1rem;
 }
 
-.recently-container span{
+main span{
     font-size: 0.8rem;
 }
 
-.recently-container img{
+.raw img{
     max-width: 90%;
 }
 
+/* MAIN:  .suggested SECTION */
+
+.suggested span{
+    display: block;
+    margin: 0 0 20px 10px;
+    color: var(--grey);
+}
+
+/* MAIN:  .artists SECTION */
+
+.artists img{
+    border-radius: 50%;
+}
+
+.artists span{
+    display: block;
+    margin: 0 0 20px 10px;
+    color: var(--grey);
+}
 
 /* FOOTER SECTION */
 

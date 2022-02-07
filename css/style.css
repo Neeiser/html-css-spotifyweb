@@ -8,7 +8,7 @@
     font-weight: 600;
 }
 
-body{
+.container{
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -272,6 +272,9 @@ main span{
 /* FOOTER SECTION */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: var(--grey-darker);
     height: 70px;
     width: 100%;

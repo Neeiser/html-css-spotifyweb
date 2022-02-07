@@ -16,6 +16,7 @@ body{
 
 a {
     text-decoration: none;
+    color: var(--grey);
 }
 
 li{
@@ -26,13 +27,11 @@ li{
 
 html {
     --white-font: #ffffff;
-    --dark-white-font: #444444;
+    --grey: #7b7d82;
     --dark-white-player: #c1c1c1;
     --black-side: #000000;
     --blue-main: #141922;
     --trasparent-banner: #00000088;
-    --grey-player: #282828;
-    --grey-icon: #a3a3a3;
 }
 
 
@@ -56,16 +55,12 @@ header img{
     width: 120px;
 }
 
-aside a{
-    color: var(--dark-white-font);
-}
-
 ul{
     padding: 5px 0;
 }
 
 aside .fas{
-    color: var(--grey-icon);
+    color: var(--dark-white-player);
 }
 
 /* ASIDE Specific selectors */
@@ -119,12 +114,12 @@ aside .fas{
 
 .profile hr{
     width: 170px;
-    border: 1px solid var(--dark-white-font);
+    border: 1px solid var(--grey);
 }
 
 .profile span{
     display: block;
-    color: var(--dark-white-font);
+    color: var(--grey);
     padding: 10px 0;
     font-size: 0.8rem;
 }
@@ -151,34 +146,39 @@ main{
     width: calc(100% - 200px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 main div{
     height: 15vh;
     width: 100%;
-    background-color: #858585;
+    border: 1px solid red;
     
 }
 
 main .banner{
     height: 70px;
     width: 100%;
-    background-color: var(--trasparent-banner);
+    background-color: var(--trasparent--main);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.banner button{
+main button{
     color: var(--white-font);
     background-color: transparent;
-    padding: 10px 20px;
+    font-size: 0.7rem;
+    margin-right: 10px;
+    padding: 12px 30px;
     border: 1.5px solid var(--white-font);
     border-radius: 30px;
 }
 
-
+main .category{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /* FOOTER SECTION */
 

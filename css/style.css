@@ -41,7 +41,7 @@ html {
 /* ASIDE Generic selectors */
 aside{
     background-color: var(--black-side);
-    height: 90%;
+    height: calc(100% - 70px);
     width: 200px;
     padding-left: 15px;
     position: relative; /* Mi serve per posizionare il div .profile */
@@ -144,7 +144,7 @@ aside .fas{
 
 main{
     background-color: #141922;
-    height: 90%;
+    height: calc(100% - 70px);
     width: calc(100% - 200px);
     overflow-y: auto;
 }

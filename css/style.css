@@ -129,7 +129,7 @@ aside .fas{
     font-size: 0.8rem;
 }
 
-.profile span:last-child{
+.profile span:last-child a{
     display: flex;
     align-items: center;
     color: var(--white-font);

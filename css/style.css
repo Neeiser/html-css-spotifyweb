@@ -149,7 +149,7 @@ main{
 }
 
 main div{
-    height: 15vh;
+    
     width: 100%;
     border: 1px solid red;
     
@@ -176,8 +176,19 @@ main button{
 
 main .category{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+main .category a{
+    margin: 1em;
+    border: 1px solid blue;
+}
+
+.category span{
+    font-size: 0.8rem;
+    font-weight: 800;
 }
 
 /* FOOTER SECTION */

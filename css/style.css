@@ -429,3 +429,40 @@ footer i:active{
     border-radius: 20px;
     background-color: var(--white);
 }
+
+/* MEDIA QUERY*/
+
+@media all and (max-width: 600px){
+
+    main{
+        width: calc(100% - 100px);
+    }
+
+    aside{
+        width: 100px;
+    }
+
+    
+
+    aside a{
+        display: none;
+    }
+
+    .ul-middle{
+        display: none;
+    }
+
+    aside .profile{
+        display: none;
+    }
+
+    .ul-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-top i{
+        transform: scale(2);
+    }
+}

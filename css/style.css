@@ -57,7 +57,10 @@ aside{
     height: calc(100% - 90px);
     width: 200px;
     padding-left: 15px;
-    position: relative; /* Mi serve per posizionare il div .profile */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
@@ -123,7 +126,6 @@ aside .fas{
 
 .profile {
     padding-right: 15px;
-    margin-top: 200px;
 }
 
 .profile hr{

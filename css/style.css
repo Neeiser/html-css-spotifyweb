@@ -435,14 +435,23 @@ footer i:active{
 @media all and (max-width: 600px){
 
     main{
-        width: calc(100% - 100px);
+        width: calc(100% - 60px);
     }
 
     aside{
-        width: 100px;
+        width: 60px;
+        padding: 0;
     }
 
-    
+    header img{
+        display: none;
+    }
+
+    header{
+        background-image: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+        text-align: center;
+    }
 
     aside a{
         display: none;
@@ -463,6 +472,8 @@ footer i:active{
     }
 
     .ul-top i{
-        transform: scale(2);
+        transform: scale(1.8);
+        padding: 20px 0;
+        text-align: center;
     }
 }

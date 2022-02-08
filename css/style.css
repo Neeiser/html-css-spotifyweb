@@ -67,7 +67,7 @@ header{
 
 header img{
     width: 120px;
-    z-index: 2;
+    z-index: 20;
 }
 
 ul{
@@ -122,9 +122,8 @@ aside .fas{
 /* ---------------------------- */
 
 .profile {
-    position: absolute;
-    bottom: 0;
     padding-right: 15px;
+    margin-top: 200px;
 }
 
 .profile hr{
@@ -184,7 +183,7 @@ main .banner{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 5;
     height: 70px;
     width: 100%;
     background-color: var(--trasparent-banner);
@@ -309,6 +308,7 @@ footer {
     height: 90px;
     width: 100%;
     display: flex;
+    z-index: 4;
 }
 
 footer i:active{
@@ -462,11 +462,12 @@ footer i:active{
     aside{
         width: 60px;
         padding: 0;
-        z-index: 2;
+        z-index: 3;
     }
 
     header img{
         display: none;
+        z-index: 20;
     }
 
     header{
@@ -474,6 +475,7 @@ footer i:active{
         background-repeat: no-repeat;
         margin: 10px;
         height: 50px;
+        z-index: 20;
     }
 
     aside a{
@@ -499,6 +501,7 @@ footer i:active{
         transform: scale(1.8);
         padding: 10px 0;
         text-align: center;
+        z-index: 3;
     }
 
     .ul-top i:active{
